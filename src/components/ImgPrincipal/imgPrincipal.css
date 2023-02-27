@@ -1,0 +1,10 @@
+.containerImgPrincipal{
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(227, 213, 213); */
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.ImgPricnipalBooks{
+    width: max-content;
+}

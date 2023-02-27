@@ -1,0 +1,14 @@
+.divIntermedio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.cardCart{
+    border: solid black 1px;
+}
+
+.productList{
+    align-self: center;
+}

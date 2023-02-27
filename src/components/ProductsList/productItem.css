@@ -1,0 +1,36 @@
+.productCard{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.imageBook{
+    width: 8rem;
+}
+
+.itemName{
+    font-size: 1rem;
+}
+
+.divCounter{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+button{
+    cursor: pointer;
+}
+
+.generalProductList{
+    margin: 0 auto;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(227, 213, 213);
+    align-self: center;
+}

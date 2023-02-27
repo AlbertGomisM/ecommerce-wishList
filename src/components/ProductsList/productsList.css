@@ -1,0 +1,6 @@
+.divItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(227, 213, 213);
+}

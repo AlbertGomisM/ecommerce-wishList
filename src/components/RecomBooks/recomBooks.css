@@ -1,0 +1,10 @@
+.recomeBooks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 6rem;
+}
+.divGeneralRecomBooks{
+    display: flex;
+    flex-direction: column;
+}
