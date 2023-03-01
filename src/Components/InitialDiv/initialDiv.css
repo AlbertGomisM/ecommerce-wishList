@@ -1,0 +1,48 @@
+.divInicial{
+    border: solid  1px black;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: fit-content;
+}
+
+img{
+    width: 10rem;
+}
+
+.imagesDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.buttonsDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.divSubmit, .divComents{
+    margin-top: 1rem;
+}
+
+.divSubmit{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+
+button, img{
+    cursor: pointer;
+}
+
+.p{
+    margin-bottom: 0.3rem;
+}
