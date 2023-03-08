@@ -34,25 +34,6 @@ export const products = [
       url: "https://pictures.abebooks.com/inventory/31426944258.jpg",
       id: 5,
     }
-    // ,
-    // {
-    //   name: "Click Eastwood",
-    //   price: 17.49,
-    //   url: "https://srv.latostadora.com/designall.dll/click_eastwood--i:13562326967690135623201709262;c:2696769;h:320;s:H_A2;k:790a3f612a7a467fa724ff52a3208ecf;p:1;f:f.jpg",
-    //   id: 6,
-    // },
-    // {
-    //   name: "Maradona",
-    //   price: 12.49,
-    //   url: "https://srv.latostadora.com/designall.dll/maradona--i:1356233316291013562362;c:3316291;h:320;s:H_C2;k:5ccb970850dc5d0d89ef20ad520343b6;p:1;f:f.jpg",
-    //   id: 7,
-    // },
-    // {
-    //   name: "El Profesor",
-    //   price: 9.99,
-    //   url: "https://srv.latostadora.com/designall.dll/profesor_-_la_casa_de_papel--i:13562328202640135623201709265;c:2820264;h:320;s:H_A5;k:9ddf25f3044d455a4ace1cdd455c963e;p:1;f:f.jpg",
-    //   id: 8,
-    // },
   ];
 
   export const recomendedBooks = [

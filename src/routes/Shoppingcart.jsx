@@ -6,6 +6,7 @@ export const Shoppingcart = () => {
     <div>
         <NavBar />
         <div>Buy HERE!</div>
+        <Cart />
     </div>
   )
 }

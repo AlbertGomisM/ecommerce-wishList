@@ -1,17 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { CartItem } from "./CartItem.jsx";
 import {products} from "../../data/products";
 import { TotalCart } from "./totalCart.jsx";
 import "./Cart.css"
+import { DataContext } from "../../context/dataContext";
+
 
 export const Cart = ({counter}) => {
+
+  const {selectedBook} = useContext(DataContext);
 
   return (
     <div className="cardCart">
         <p className="yourCart">Your Cart:</p>
         <hr></hr>
         {
-          products.map((book)=>{
+          selectedBook.map((book)=>{
             return(
               <CartItem book={book}/>
               )

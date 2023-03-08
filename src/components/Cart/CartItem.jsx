@@ -4,29 +4,24 @@ import { useContext } from 'react';
 import { DataContext } from "../../context/dataContext";
 
 export const CartItem = ({book}) => {
-    const contextData = useContext(DataContext)
+  const {selectedBook, setSelectedBook} = useContext(DataContext);
+  const {total, setTotal} = useContext(DataContext)
 
-    const {name, price} = book
-    const [selectedBook, setSelected] = useState(0)
-    // let numero;
-    // useEffect(() => {
-    //     function freshLocalStorage(){
-    //         numero = (localStorage.getItem(name));
-    //         // JSON.parse(numero).counter
-    //         console.log(JSON.parse(numero).contador)
-    //         setSelected(JSON.parse(numero).contador)
-    //   }
-    //   window.addEventListener("storage", freshLocalStorage, false)
-  
-    //   return () => {
-    //     window.removeEventListener('storage', freshLocalStorage)
-    //   }
-    // })
-    if(selectedBook >0){
-        return (
-          <div className="cardItems">
-              <p>{name} x {selectedBook} x {price}</p>
-          </div>
+  const handleDelete = ()=>{
+    const filtered = selectedBook.filter(element => element.id !== book.id)
+    setSelectedBook(filtered)
+    setTotal(total-book.price)
+  }
+
+  // setTotal(total+book.price)
+
+    return (
+      <div className="cardItems">
+            {
+              <p>{book.name} - {book.price} €</p>
+            }
+            <button onClick={handleDelete}>Delete</button>
+      </div>
         )
-    }
+    // }
   }

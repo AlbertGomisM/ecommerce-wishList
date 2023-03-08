@@ -1,22 +1,14 @@
 import {products} from "../../data/products";
+import { DataContext } from "../../context/dataContext";
+import React, { useState, useEffect, useContext } from "react";
 
-
-export const TotalCart = ({book}) => {
-    // const {name, price} = book
-    // let total;
-    // let precio;
-    // let quantity;
-  return (
-    // {products.map((name)=>{
-    //     return(
-    //         objStor = JSON.parse(localStorage.getItem(name))
-    //         {precio= objStor.price};
-    //         {quantity=objStor.contador}
-    //       )
-    //       total =+ precio*quantity
-    //     })
-    <div>
-        0 €
-    </div>
-  )
+export const TotalCart = () => {
+  const [totalPrice, setTotalPrice] = useState(0)
+  const {selectedBook} = useContext(DataContext);
+  const {total, setTotal} = useContext(DataContext)
+ 
+return (
+  <div>
+    <p>{total.toFixed(2)} €</p>
+  </div>)
 }

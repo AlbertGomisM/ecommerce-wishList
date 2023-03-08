@@ -1,25 +1,14 @@
-import { createContext, useState } from "react";
-import { products } from "../data/products";
+import { createContext, useState, useContext} from "react";
 
 export const DataContext = createContext();
 
 export function DataContextProvider(props){
 
-    const objProducts = {};
+    const [selectedBook, setSelectedBook] = useState([]);
 
-    products.map((x)=>{
-        objProducts[x.name]= {
-            "price" : `${x.price}`,
-            "quantity" : 0
-        }
-    })
+    const [total, setTotal] = useState(0)
 
-
-    const [contextData, setContextData]=useState(objProducts);
-
-    const valor = {contextData, setContextData};
-
-    // console.log(objProducts)
+    const valor = {selectedBook, setSelectedBook, total, setTotal};
 
 return(
     <DataContext.Provider value={valor}>

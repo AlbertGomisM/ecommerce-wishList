@@ -8,9 +8,9 @@ export const RecomBooks = () => {
       <div className="divGeneralRecomBooks">
         <h2>Books only for you!</h2>
         <div className="recomeBooks">
-          {recomendedBooks.map((x)=>{ 
+          {recomendedBooks.map((x, indx)=>{ 
               return(
-                  <ProductItem item={x}/>
+                  <ProductItem key={indx} item={x}/>
                 )
             })}    
       </div>
