@@ -1,0 +1,57 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Albert",
+      "email": "albert@gmail.com",
+      "password": "hola"
+    },
+    {
+      "id": 2,
+      "name": "Neymar",
+      "email": "ney@gmail.com",
+      "password": "hola"
+    },
+    {
+      "name": "gomis",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "name": "neymar",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "name": "neymar22",
+      "password": "123456",
+      "id": 7
+    },
+    {
+      "name": "neymar22",
+      "password": "123456",
+      "id": 8
+    },
+    {
+      "name": "neymar22",
+      "password": "123456",
+      "id": 9
+    },
+    {
+      "name": "neymar23",
+      "password": "123456",
+      "id": 10
+    },
+    {
+      "name": "neymar25",
+      "password": "hola",
+      "id": 11
+    }
+  ]
+}
