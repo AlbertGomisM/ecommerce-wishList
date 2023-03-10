@@ -9,9 +9,11 @@ import { DataContextProvider } from './context/dataContext';
 import { UserContext } from './context/userContext';
 import {UserContextProvider} from "./context/userContext"
 import {SignInRoute} from "./routes/SignInRoute"
+import { useContext } from 'react';
 
 
 function App () {
+  const { loginState} = useContext(UserContext)
   return (
     <div className="App">
       <UserContextProvider>
@@ -24,6 +26,9 @@ function App () {
             <Route path='/products' element={<Products />}></Route>
             <Route path='/shoppingCart' element={<Shoppingcart/>}></Route>
             <Route path='/signIn' element={<SignInRoute/>}></Route>
+            <Route path="/discounts" render={()=>{
+              return loginState ? <Login /> : <Home />
+            }}/>
 
         </Routes>
     </BrowserRouter>
