@@ -7,9 +7,6 @@ export const SignInRoute = () => {
     <div>
         <NavBar/>
         <SignIn />
-        <p>
-        SignIn
-        </p>
     </div>
   )
 }

@@ -10,11 +10,13 @@ export const SignIn = () => {
   const [formPass, setFormPass] = useState("")
   const [data, setData] = useState({})
   const navigate = useNavigate()
+  const [signIn, setSignIn] = useState(false)
   
   const handleSignin = (e) =>{
     e.preventDefault();
     setData({"name": formName, "password":formPass})
-    console.log(JSON.stringify(data))}
+    console.log(JSON.stringify(data))
+    setSignIn(true)}
 
 
 useEffect(() => {
@@ -59,6 +61,7 @@ useEffect(() => {
               <button type='submit' className='btnLogin'>Sign in</button>
               <button onClick={navigateLogIn}>Log in</button>
             </div>
+            {signIn ? <p>Now you have an account</p> : null}
           </form>
         </div>
     </div>

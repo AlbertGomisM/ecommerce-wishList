@@ -5,8 +5,9 @@ export const Shoppingcart = () => {
   return (
     <div>
         <NavBar />
-        <div>Buy HERE!</div>
-        <Cart />
+        <div className='divShoppingCart'>
+          <Cart className="cart"/>
+        </div>
     </div>
   )
 }

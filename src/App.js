@@ -13,7 +13,7 @@ import { useContext } from 'react';
 
 
 function App () {
-  const { loginState} = useContext(UserContext)
+  // const { loginState} = useContext(UserContext)
   return (
     <div className="App">
       <UserContextProvider>
@@ -26,9 +26,7 @@ function App () {
             <Route path='/products' element={<Products />}></Route>
             <Route path='/shoppingCart' element={<Shoppingcart/>}></Route>
             <Route path='/signIn' element={<SignInRoute/>}></Route>
-            <Route path="/discounts" render={()=>{
-              return loginState ? <Login /> : <Home />
-            }}/>
+            {/* <Route path="/discounts" /> */}
 
         </Routes>
     </BrowserRouter>

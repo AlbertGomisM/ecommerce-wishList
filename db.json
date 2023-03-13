@@ -16,6 +16,16 @@
       "name": "gomis",
       "password": "123",
       "id": 3
+    },
+    {
+      "name": "Albert25",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "name": "hola",
+      "password": "hola2",
+      "id": 5
     }
   ]
 }
