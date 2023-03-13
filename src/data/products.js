@@ -52,7 +52,7 @@ export const products = [
       id: 7,
     },
     {
-      name: "El Silmallirion",
+      name: "El Silmarillion",
       autor: "J.R.R Tolkien" ,
       price: 13.49,
       url: "https://imagessl4.casadellibro.com/a/l/t7/84/9788445013984.jpg",

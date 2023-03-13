@@ -10,6 +10,7 @@ import { UserContext } from './context/userContext';
 import {UserContextProvider} from "./context/userContext"
 import {SignInRoute} from "./routes/SignInRoute"
 import { useContext } from 'react';
+import { ProtectedRoute } from './ProtectedRoute/ProtectedRoute';
 
 
 function App () {
@@ -23,16 +24,13 @@ function App () {
             <Route path="/*" element={<div>404-Not Found</div>}>Error</Route>
             <Route path='/' element={<Home />}></Route>
             <Route path='/login' element={<Login />}></Route>
-            <Route path='/products' element={<Products />}></Route>
-            <Route path='/shoppingCart' element={<Shoppingcart/>}></Route>
+            <Route path='/shoppingCart' element={<Shoppingcart />}></Route>
+            <Route path='/products' element={<ProtectedRoute> <Products/> </ProtectedRoute>}/>
             <Route path='/signIn' element={<SignInRoute/>}></Route>
-            {/* <Route path="/discounts" /> */}
-
         </Routes>
     </BrowserRouter>
     </DataContextProvider>
-
-      </UserContextProvider>
+    </UserContextProvider>
 
     </div>
   );

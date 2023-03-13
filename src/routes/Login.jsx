@@ -52,8 +52,8 @@ export const Login = () => {
       <div className='formDiv'>
         <p>Log in to find your books!</p>
         <form onSubmit={handleLogin} className='formLogin'>
-          <input type="text" value={formName} onChange={handleName} />
-          <input type="password" value={formPass} onChange={handlePass} />
+          <input type="text" value={formName} onChange={handleName} placeholder="Your Nickname"/>
+          <input type="password" value={formPass} onChange={handlePass} placeholder="Your Password"/>
           <div className='divBtn'>
             <button type='submit' className='btnLogin'>Log in</button>
             <button onClick={navigateSignIn}>Sign in</button>
@@ -62,6 +62,7 @@ export const Login = () => {
           {loginState ? <p>You are a GOOD READER!</p> : <p>You are not logged in</p>}
         </form>
       </div>
+      
     </div>
   )
 }

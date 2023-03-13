@@ -55,8 +55,8 @@ useEffect(() => {
         <div className='formDiv'>
           <p>Log in to find your books!</p>
           <form onSubmit={handleSignin} className='formLogin'>
-            <input type="text" value={formName} onChange={handleName}/>
-            <input type="password" value={formPass} onChange={handlePass}/>
+            <input type="text" value={formName} onChange={handleName} placeholder="Enter your Nickname"/>
+            <input type="password" value={formPass} onChange={handlePass} placeholder="Enter your Password"/>
             <div className='divBtn'>
               <button type='submit' className='btnLogin'>Sign in</button>
               <button onClick={navigateLogIn}>Log in</button>

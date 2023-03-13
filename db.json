@@ -26,6 +26,11 @@
       "name": "hola",
       "password": "hola2",
       "id": 5
+    },
+    {
+      "name": "Miquel",
+      "password": "123",
+      "id": 6
     }
   ]
 }
